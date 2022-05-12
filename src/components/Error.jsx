@@ -6,7 +6,9 @@ export default function ErrorPage(props){
             <div className={styles.content}>
                 <h1 className='title'>{props.type}</h1>
                 <div className={styles.subcontainer}>
-                    <img src='/pikachucrying.webp' alt='Image of Pikachu crying' width={300} height={300} />
+                    <div>
+                    <img src='/pikachu_sad.png' alt='Image of Pikachu crying'/>
+                    </div>
                 </div>
                 <div style={{display:'flex',justifyContent:'center',flexDirection:'column',height:'100%'}}>
                     {props.children}
