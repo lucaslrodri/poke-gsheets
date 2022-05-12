@@ -3,9 +3,26 @@ import Error from '../../components/Error'
 import request from '../../functions/request'
 import Main from '../../components/Main'
 
-async function authorize(){
-    const auth = await google.auth.getClient({ scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'] })
+async function getAuthToken() {
+    if (typeof window !== 'undefined') {
+      throw new Error('NO SECRETS ON CLIENT!')
+    }
 
+    const { privateKey } = {privateKey: process.env.GOOGLE_PRIVATE_KEY}
+    const auth = new google.auth.GoogleAuth({
+      scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+      projectId: process.env.GOOGLE_PROJECTID,
+      credentials: {
+        private_key: privateKey,
+        client_email: process.env.GOOGLE_CLIENT_EMAIL,
+      },
+    })
+    const authToken = await auth.getClient()
+    return authToken
+}
+
+async function authorize(){
+    const auth = await getAuthToken()
     return google.sheets({ version: 'v4', auth })
 }
 

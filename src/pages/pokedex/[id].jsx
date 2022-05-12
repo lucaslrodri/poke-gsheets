@@ -6,9 +6,26 @@ import Main from '../../components/Main'
 import PokedexData from '../../components/PokedexData'
 import BaseStats from '../../components/BaseStats'
 
-async function authorize(){
-    const auth = await google.auth.getClient({ scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'] })
+async function getAuthToken() {
+    if (typeof window !== 'undefined') {
+      throw new Error('NO SECRETS ON CLIENT!')
+    }
 
+    const { privateKey } = {privateKey: process.env.GOOGLE_PRIVATE_KEY}
+    const auth = new google.auth.GoogleAuth({
+      scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+      projectId: process.env.GOOGLE_PROJECTID,
+      credentials: {
+        private_key: privateKey,
+        client_email: process.env.GOOGLE_CLIENT_EMAIL,
+      },
+    })
+    const authToken = await auth.getClient()
+    return authToken
+}
+
+async function authorize(){
+    const auth = await getAuthToken()
     return google.sheets({ version: 'v4', auth })
 }
 
@@ -16,7 +33,7 @@ export async function getServerSideProps({ query }) {
     const sheets = await authorize()
     
     const { id } = query
-
+    
     //Request list
     const [number_list, name_list] = await request(sheets, `pokedex!A2:B801`,'COLUMNS')
     
@@ -24,7 +41,7 @@ export async function getServerSideProps({ query }) {
     const stats_range = `pokedex!A${id}:M${id}`
     const global_stats_range = `stats!B22:H25`
     const response = await request(sheets, [stats_range,global_stats_range], 'ROWS')
-  
+    
     const stats = response[0].values[0]
     const bar = {
         size: response[1].values[0],
@@ -34,7 +51,7 @@ export async function getServerSideProps({ query }) {
             last: response[1].values[3]
         }
     }
-  
+    
     return { 
         props: {
             stats,
@@ -43,7 +60,7 @@ export async function getServerSideProps({ query }) {
             query
         } 
     }
-  }
+}
 
 export default function Pokemon(props) {
     const pokemon = new PokemonGenerator(props.stats)
