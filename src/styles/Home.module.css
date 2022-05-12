@@ -1,3 +1,20 @@
 .main{
-  height: 80vh;
+  height: 100%;
+}
+
+.content{
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+@media (max-width: 600px){
+  .content{
+    flex-direction: column;
+  }
+  .main{
+    position: absolute;
+    top: 70px;
+    height: 100%;
+    z-index: -1;
+  }
 }
