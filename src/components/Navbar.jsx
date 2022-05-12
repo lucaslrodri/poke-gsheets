@@ -26,7 +26,7 @@ export default function Nav(props){
             if (value.startsWith('#')){
                 value = value.slice(1)
             }
-            return (Number(value))? [Number(value),'number']:[value,'string'] 
+            return (Number(value))? [Number(value),'number']:[value.toLocaleLowerCase(),'string'] 
         }
 
         const [value, type] = searchType()
