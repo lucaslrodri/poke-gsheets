@@ -1,17 +1,12 @@
 import Error from '../../components/Error'
-import request from '../../functions/request'
 import Main from '../../components/Main'
-import authorize from '../../functions/authorize'
+import generateList from '../../functions/generateList'
 
-export async function getServerSideProps() {
-  const sheets = await authorize()
-
-  const [number_list, name_list] = await request(sheets, `pokedex!A2:B801`,'COLUMNS')
+export async function getStaticProps(){
+  const list = await generateList()
 
   return { 
-      props: {
-          list: {string: name_list, number: number_list}
-      } 
+      props: {list} 
   }
 }
 

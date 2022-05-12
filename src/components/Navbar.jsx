@@ -16,15 +16,15 @@ export default function Nav(props){
 
     const searchPokemon = async (e) => {
         e.preventDefault()
-
+        
         if (searchString===''){
             return false
         }
-
+        
         function capitalize(value){
             return value.split(' ').map(e=>e[0].toUpperCase()+e.substr(1)).join(' ')
         }
-
+        
         function searchType(){
             let value = searchString
             if (value.startsWith('#')){
@@ -32,18 +32,19 @@ export default function Nav(props){
             }
             return (Number(value))? [Number(value),'number']:[capitalize(value),'string'] 
         }
-
+        
         const [value, type] = searchType()
-
+        
         const id = props.list[type].indexOf(String(value))
-            
+        
+        setSearchString("")
+        
         if (Number.isInteger(id)){
             if (id>=0){
                 router.push({
                     pathname: `/pokedex/${id+2}`,
                     query: {search:value,type}
                 })
-                setSearchString("")
             }else{
                 router.push({
                     pathname: `/pokedex/notfound`,

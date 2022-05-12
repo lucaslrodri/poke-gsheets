@@ -1,10 +1,10 @@
 import PokemonGenerator from '../../models/Pokemon'
-import request from '../../functions/request'
 import styles from '../../styles/Pokemon.module.css'
 import Main from '../../components/Main'
 import PokedexData from '../../components/PokedexData'
 import BaseStats from '../../components/BaseStats'
 import authorize from '../../functions/authorize'
+import request from '../../functions/request'
 
 export async function getServerSideProps({ query }) {
     const sheets = await authorize()

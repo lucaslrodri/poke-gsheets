@@ -1,19 +1,26 @@
 import styles from '../styles/Home.module.css'
 import Main from '../components/Main'
-import request from '../functions/request'
-import authorize from '../functions/authorize'
+import generateList from '../functions/generateList'
 
-export async function getServerSideProps() {
-  const sheets = await authorize()
-
-  const [number_list, name_list] = await request(sheets, `pokedex!A2:B801`,'COLUMNS')
+export async function getStaticProps(){
+  const list = await generateList()
 
   return { 
-      props: {
-          list: {string: name_list, number: number_list}
-      } 
+      props: {list} 
   }
 }
+
+// export async function getServerSideProps() {
+//   const sheets = await authorize()
+
+//   const [number_list, name_list] = await request(sheets, `pokedex!A2:B801`,'COLUMNS')
+
+//   return { 
+//       props: {
+//           list: {string: name_list, number: number_list}
+//       } 
+//   }
+// }
 
 export default function Index() {
   return <Main>
