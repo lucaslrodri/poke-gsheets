@@ -29,12 +29,14 @@ export default function Index() {
           <span className='title'>+</span>
           <img src='/nextjs.png' alt='Logo do Next JS'/>
         </div>
-        <p className='description'>
-        A Pokémon search engine that uses Google Sheets as Database.
-        </p>
-        <p className='description'>
-        Please visit our <a target="_blank" rel="noopener noreferrer" href='https://github.com/yuuta-togashi/poke-gsheets'>Github repository</a> for more details.
-        </p>
+        <div className={styles.container}>
+          <p className='description'>
+          A Pokémon search engine that uses Google Sheets as Database.
+          </p>
+          <p className='description'>
+          Please visit our <a target="_blank" rel="noopener noreferrer" href='https://github.com/yuuta-togashi/poke-gsheets'>Github repository</a> for more details.
+          </p>
+        </div>
     </main>
     </div>
   </Main>
