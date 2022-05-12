@@ -20,7 +20,7 @@ export default function Index() {
     <div className={styles.main}>
     <main className='container'>
         <h1 className='title'>
-        Welcome to Poke Sheet!
+        Welcome to Poke GSheets!
         </h1>
         <div className={`${styles.content} container`}>
           <img src='/pikachu.jpg' alt='Foto do Pikachu'/>
