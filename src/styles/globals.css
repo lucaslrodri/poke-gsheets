@@ -1,3 +1,11 @@
+:root {
+  --maincolor: #34a853;
+  --shadowcolor: #177d37;
+  --shadowcolor2: #125f2a;
+  --scriptcolor: #696969;
+  --bordercolor: #ddd;
+}
+
 html,
 body {
   padding: 0;
@@ -43,15 +51,15 @@ td, th {
 }
 
 tr{
-  border-top: solid 1px #ddd;
+  border-top: solid 1px var(--bordercolor);
 }
 
 tr:last-child{
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px var(--bordercolor);
 }
 
 th {
-  color: #696969;
+  color: var(--scriptcolor);
   text-align: right;
   font-weight: normal;
 }
@@ -78,4 +86,9 @@ th {
 .description {
   margin: 0;
   font-size: 1.4rem;
+}
+
+
+a{
+  color: var(--maincolor);
 }

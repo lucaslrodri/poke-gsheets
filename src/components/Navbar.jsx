@@ -49,7 +49,7 @@ export default function Nav(props){
         <nav className={styles.nav}>
             <Link href={'/'}>
             <div className={styles.logo}>
-                <Logo frontColor={'#FFF'} backColor={'#34a853'} scale={0.75}/>
+                <Logo frontColor={'#FFF'} backColor={'var(--maincolor)'} scale={0.75}/>
             </div>
             </Link>
             <form className={styles.container} onSubmit={searchPokemon}>

@@ -8,7 +8,7 @@
     align-content: center;
     height: 60px;
     overflow: hidden;
-    background-color: #34a853;
+    background-color: var(--maincolor);
     box-shadow: 0 1px 0 0 rgba(0,0,0,.25);
   }
 
@@ -25,7 +25,7 @@
 
 .container input[type=text] {
     font-size: 18px;
-    border: #177d37 solid 1px;
+    border: var(--shadowcolor) solid 1px;
     border-radius: 5px 0 0 5px;
     color: #696969;
     padding-left: 8px;
@@ -34,15 +34,15 @@
 
 .container input[type=text]:focus{
     outline: none;
-    border: #125f2a solid 1px;
+    border: var(--shadowcolor2) solid 1px;
 }
 
 .container button {
     padding: 6px 10px;
     margin: 0px;
     color: #FFF;
-    background: #177d37;
-    border: #125f2a solid 1px;
+    background: var(--shadowcolor);
+    border: var(--shadowcolor2) solid 1px;
     font-size: 17px;
     border: none;
     border-radius: 0 5px 5px 0;

@@ -35,7 +35,7 @@ export default function Index() {
         A Pokémon search engine that uses Google Sheets as Database.
         </p>
         <p className='description'>
-        Please visit our Github repository for more details.
+        Please visit our <a href='https://github.com/yuuta-togashi/poke-gsheets'>Github repository</a> for more details.
         </p>
     </main>
   </Main>
