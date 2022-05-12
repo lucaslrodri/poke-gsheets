@@ -1,0 +1,63 @@
+.nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 60px;
+    overflow: hidden;
+    background-color: #34a853;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.25);
+  }
+
+.container{
+    display: inline-flex;
+    flex-direction: row;
+    flex-grow: 10;
+    align-items: stretch;
+    width: 100vw;
+    max-width: 750px;
+    padding: 0px;
+    margin: 0 10px;
+}
+
+.container input[type=text] {
+    font-size: 18px;
+    border: #177d37 solid 1px;
+    border-radius: 5px 0 0 5px;
+    color: #696969;
+    padding-left: 8px;
+    flex-grow: 20;
+}
+
+.container input[type=text]:focus{
+    outline: none;
+    border: #125f2a solid 1px;
+}
+
+.container button {
+    padding: 6px 10px;
+    margin: 0px;
+    color: #FFF;
+    background: #177d37;
+    border: #125f2a solid 1px;
+    font-size: 17px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    min-width: 40px;
+    cursor: pointer;
+    flex-grow: 1;
+    transition-duration: 0.2s;
+    opacity: 0.85;
+}
+
+.container button:active {
+    background: rgba(0,0,0,0.33);
+    opacity: 1;
+}
+
+.logo{
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.title{
+    text-align: center;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 800px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}

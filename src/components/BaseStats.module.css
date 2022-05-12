@@ -1,0 +1,26 @@
+.container{
+    flex-grow: 1;
+    min-width: 300px;
+    width:100%;
+}
+
+.container th{
+    width: 25%;
+    min-width: 50px;
+}
+
+.container td:last-child{
+    width: 80%;
+}
+
+.container td{
+    text-align: right;
+}
+
+.container tr:last-child{
+    font-weight: bold;
+}
+
+.container tr:last-child th{
+    font-weight: bold;
+}

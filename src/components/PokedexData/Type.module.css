@@ -1,0 +1,16 @@
+.type {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    height: 26px;
+    margin: 0px 2px;
+    border-radius: 13px;
+    border: 1px solid rgba(0,0,0,.2);
+    text-align:center;
+    padding: 0 auto;
+}
+
+.type span{
+    margin: 2px 5px;
+}

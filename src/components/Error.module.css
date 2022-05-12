@@ -1,0 +1,12 @@
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.subcontainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}

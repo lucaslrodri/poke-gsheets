@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="89.407463mm"
+   height="90.000191mm"
+   viewBox="0 0 89.407463 90.000191"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.74029882"
+     inkscape:cx="183.7096"
+     inkscape:cy="275.5644"
+     inkscape:window-width="1683"
+     inkscape:window-height="743"
+     inkscape:window-x="769"
+     inkscape:window-y="119"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-56.462186,-75.89149)">
+    <path
+       id="path846"
+       style="fill:#34a853;fill-opacity:1;stroke-width:9.35811;stroke-linecap:round;stroke-linejoin:round"
+       d="M 168.90625 0 A 170.07874 170.07874 0 0 0 0 151.18164 L 95.820312 151.18164 A 75.590551 75.590551 0 0 1 168.95898 94.488281 A 75.590551 75.590551 0 0 1 242.14453 151.18164 L 337.91797 151.18164 A 170.07874 170.07874 0 0 0 168.90625 0 z M 0 188.97656 A 170.07874 170.07874 0 0 0 168.90625 340.1582 A 170.07874 170.07874 0 0 0 337.8125 188.97656 L 242.09766 188.97656 A 75.590551 75.590551 0 0 1 168.95898 245.66992 A 75.590551 75.590551 0 0 1 95.820312 188.97656 L 0 188.97656 z "
+       transform="matrix(0.26458333,0,0,0.26458333,56.462186,75.89149)" />
+    <circle
+       style="fill:#34a853;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path1230"
+       cx="101.16592"
+       cy="120.89159"
+       r="10" />
+  </g>
+</svg>
