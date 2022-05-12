@@ -33,3 +33,4 @@ yarn-error.log*
 
 # key
 secrets.json
+parse.js

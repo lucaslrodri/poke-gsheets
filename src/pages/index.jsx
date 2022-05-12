@@ -9,7 +9,7 @@ async function getAuthToken() {
     throw new Error('NO SECRETS ON CLIENT!')
   }
 
-  const { privateKey } = {privateKey: process.env.GOOGLE_PRIVATE_KEY}
+  const { privateKey } = JSON.parse(process.env.GOOGLE_PRIVATE_KEY)
   const auth = new google.auth.GoogleAuth({
     scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
     projectId: process.env.GOOGLE_PROJECTID,
