@@ -69,7 +69,7 @@ th {
   justify-content: center;
   align-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
 }
 
 .title {
@@ -84,7 +84,7 @@ th {
 }
 
 .description {
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1.4rem;
 }

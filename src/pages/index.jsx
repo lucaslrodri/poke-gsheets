@@ -22,6 +22,11 @@ export default function Index() {
         <h1 className='title'>
         Welcome to Poke GSheets!
         </h1>
+        <div className={styles.container}>
+          <p className='description'>
+          A Pokémon search engine that uses Google Sheets as Database.
+          </p>
+        </div>
         <div className={`${styles.content} container`}>
           <img src='/pikachu.png' alt='Pikachu (Wikipedia)'/>
           <span className='title'>+</span>
@@ -30,9 +35,6 @@ export default function Index() {
           <img src='/nextjs.png' alt='Logo do Next JS'/>
         </div>
         <div className={styles.container}>
-          <p className='description'>
-          A Pokémon search engine that uses Google Sheets as Database.
-          </p>
           <p className='description'>
           Please visit our <a target="_blank" rel="noopener noreferrer" href='https://github.com/yuuta-togashi/poke-gsheets'>Github repository</a> for more details.
           </p>
