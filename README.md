@@ -2,7 +2,7 @@
 
 A **simple demo** for working with **Google Sheets query** with Pokemon thematic.
 
-<div style='display:flex!important;justify-content:center!important;align-items:center!important;gap:20px!important;flex-wrap:wrap!important;background-color:white;'>
+<div style='display:flex!important;justify-content:center!important;align-items:center!important;gap:20px!important;flex-wrap:wrap!important'>
     <img style='max-height: 150px' src='public/pikachu.png' alt='Foto do Pikachu'/>
     <img style='max-height: 150px' src='public/plus.svg' alt='+'/>
     <img style='max-height: 150px' src='public/sheets.png' alt='Logo do Google Sheets'/>
