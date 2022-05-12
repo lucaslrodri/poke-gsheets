@@ -2,7 +2,7 @@
 
 A **simple demo** for working with **Google Sheets query** with Pokemon thematic.
 
-<div style='display:flex!important;justify-content:center!important;align-items:center!important;gap:20px!important;flex-wrap:wrap!important'>
+<div style='display:flex!important;justify-content:center!important;align-items:center!important;gap:20px!important;flex-wrap:wrap!important;background-color:white;'>
     <img style='max-height: 150px' src='public/pikachu.png' alt='Foto do Pikachu'/>
     <img style='max-height: 150px' src='public/plus.svg' alt='+'/>
     <img style='max-height: 150px' src='public/sheets.png' alt='Logo do Google Sheets'/>
@@ -40,7 +40,7 @@ Features:
 
 5. Import `PokeSheet.xlsx` to Google Sheets and **share** it with everyone that has a link
 
-6. Create local enviroment variables (`.env.local` file) in your project root as following:
+6. Create local environment variables (`.env.local` file) in your project root as following:
 
 ```
 SHEET_ID=your_google_sheets_id
