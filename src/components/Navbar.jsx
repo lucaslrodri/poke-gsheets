@@ -21,12 +21,16 @@ export default function Nav(props){
             return false
         }
 
+        function capitalize(value){
+            return value.split(' ').map(e=>e[0].toUpperCase()+e.substr(1)).join(' ')
+        }
+
         function searchType(){
             let value = searchString
             if (value.startsWith('#')){
                 value = value.slice(1)
             }
-            return (Number(value))? [Number(value),'number']:[value.toLocaleLowerCase(),'string'] 
+            return (Number(value))? [Number(value),'number']:[capitalize(value),'string'] 
         }
 
         const [value, type] = searchType()
