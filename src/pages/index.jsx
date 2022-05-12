@@ -23,7 +23,7 @@ export default function Index() {
         Welcome to Poke GSheets!
         </h1>
         <div className={`${styles.content} container`}>
-          <img src='/pikachu.jpg' alt='Foto do Pikachu'/>
+          <img src='/pikachu.jpg' alt='Pikachu (Wikipedia)'/>
           <span className='title'>+</span>
           <img src='/sheets.png' alt='Logo do Google Sheets'/>
           <span className='title'>+</span>

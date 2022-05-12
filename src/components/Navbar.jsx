@@ -4,6 +4,13 @@ import router from "next/router"
 import Logo from './Logo/Logo'
 import Link from 'next/link'
 
+function blurAll(){
+    var tmp = document.createElement("input");
+    document.body.appendChild(tmp);
+    tmp.focus();
+    document.body.removeChild(tmp);
+   }
+
 export default function Nav(props){
     const [searchString, setSearchString] = useState("")
 
@@ -43,6 +50,7 @@ export default function Nav(props){
                 pathname: `/pokedex/notfound`,
             })
         }
+        blurAll()
     }
 
     return (
@@ -58,6 +66,7 @@ export default function Nav(props){
                 placeholder="Search for name or number..."
                 value = {searchString}
                 onChange={e =>setSearchString(e.target.value)}
+                onSubmitEditing={Keyboard.dismiss}
                 />
                 <button onClick={searchPokemon}>
                 <div style={{transform: 'rotate(45deg)'}}>&#9906;</div>
