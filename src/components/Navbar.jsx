@@ -66,7 +66,6 @@ export default function Nav(props){
                 placeholder="Search for name or number..."
                 value = {searchString}
                 onChange={e =>setSearchString(e.target.value)}
-                onSubmitEditing={Keyboard.dismiss}
                 />
                 <button onClick={searchPokemon}>
                 <div style={{transform: 'rotate(45deg)'}}>&#9906;</div>
