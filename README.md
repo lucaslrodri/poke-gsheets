@@ -3,12 +3,13 @@
 A **simple demo** for working with **Google Sheets query** with Pokemon thematic.
 
 <div style='display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap'>
-    <img style='max-height: 150px' src='public/pikachu.jpg' alt='Foto do Pikachu'/>
+    <img style=src='public/pikachu.png' alt='Foto do Pikachu'/>
     <span style='font-size:4rem'>+</span>
-    <img style='max-height: 150px' src='public/sheets.png' alt='Logo do Google Sheets'/>
+    <img style=src='public/sheets.png' alt='Logo do Google Sheets'/>
     <span style='font-size:4rem'>+</span>
-    <img style='max-height: 150px' src='public/nextjs.png' alt='Logo do Next JS'/>
+    <img style= src='public/nextjs.png' alt='Logo do Next JS'/>
 </div>
+
 
 Features:
 
