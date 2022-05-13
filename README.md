@@ -16,10 +16,11 @@ Features:
 - Use Google Sheets **API v4** for search cells (methods `batchGet` and `get`).
 -  Search Pokemon by Name or National Dex Number.
 - **Rich widgets**:
-    - Bar Graph with color changing
-    - Check mark display for true/false variables
-    - Custom text display with custom background color and font weight
-    - Image
+    - Colored Bar Graph - Numeric values: Pokemon stats
+    - Colored labels - Categorical values: Pokemon types
+    - Colored icons - Boolean values (✔ or ✘):  Check if is legendary or not
+    - Custom format text - Bold text + custom string formating: Pokemon number
+    - Image - Image of the Pokemon
 
 > **Live demo**: https://poke-gsheets.vercel.app/
 
